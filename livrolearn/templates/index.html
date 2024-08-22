@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>{% block title %} Learn  - Aprenda inglês lendo {% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock %}
+    </body>
+</html>
