@@ -1,10 +1,26 @@
-
-
-
-<nav>
-    <ul>
-        <li><img src="{{ url_for('static', filename='img/Learn.png')}}" /></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
+<nav class="w-full flex justify-between items-center py-1 px-5 fixed top-0 left-0 right-0 z-50 bg-white">
+    
+    <div class="w-6/12">
+        <a href="/">
+            <img src="{{ url_for('static', filename='img/Learn.png')}} "  class="h-10" />
+        </a>
+    </div>
+    <div class="w-6/12 flex flex-nowrap justify-end">
+        <div class="mr-10 mt-2">
+            <a href="/">
+                <h1 class="text-left text-1xl font-bold">Loja</h1>
+            </a>
+        </div>
+        <div class="mr-14 mt-2">
+            <a href="/">
+                <h1 class="text-left text-1xl font-bold">Seus livros</h1>
+            </a>
+        </div>
+        <div class="mr-2">
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/imgperfil.png')}}" />
+            </a>
+        </div>
+    </div>
 </nav>
+
